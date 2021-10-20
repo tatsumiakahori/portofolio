@@ -1,13 +1,19 @@
-void setup() {
-    size(600, 600, P3D);
-    noLoop();
+void setup(){
+  size(600, 400);
+  background(0);
 }
 
-void draw() {
-    background(0);
-    lights();
-    translate(width/2, height/2, 0);
-    rotateY(radians(-30));
-    rotateX(radians(-30));
-    box(100);
+float x = 300;
+float y = 200;
+int r = 180;
+
+void draw(){
+fill(255, 10);
+noStroke();
+rect(0, 0, 600, 400);
+x = x + random(-4, 4);
+y = y + random(-4, 4);
+noFill();
+stroke(random(255), random(255), 255);
+ellipse(x, y, r, r);
 }
