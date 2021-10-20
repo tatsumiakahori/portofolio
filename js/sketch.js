@@ -20,7 +20,7 @@ function windowResized(){
 }
 
 function setup() {
-    canvas = createCanvas(windowWidth, windowHeight);//ブラウザのウィンドウサイズに合わせてcanvas作成
+    canvas = createCanvas(windowWidth + 200, windowHeight + 200);//ブラウザのウィンドウサイズに合わせてcanvas作成
     canvas.style('z-index','-1');//canvasを後ろに移動する。
 
     canvasSetup();
